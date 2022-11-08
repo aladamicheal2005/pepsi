@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/asset/predicti.css">
+    <title>PepCoke Prediction</title>
+</head>
+<body>
+    <ul class="uli">
+        <li class="iris"><a href='/'>PepCoke</a></li>
+        <li class="help"><a href='/help'>Help</a></li>
+     </ul>   
+     <div class="header">
+        <center><b><h1>PepCoke Prediction</h1></b></center>
+     </div>
+    <center> <h3>PepCoke Prediction App is a prediction App built by Webster team, the app is based on how COMPUTER VISION works<br>This App will predict the probability of the input image being<em> PEPSI or COCACOLA</em></h3></center>
+    </h3><br>
+    <div class="">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <center><input type="file" name='file' title="Chooose an Image" required></center><br><br><br><br>
+            <center><div class="subm "> 
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <input type="submit" class="subb" value="SUBMIT" class="btn btn-primary">
+            </div></center><br><br><br><br><br><br>
+        </form>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        Copyright&copy; Webster Company Limited
+    </footer>  
+    
+    
+    </body>
+    <!-- <style>
+        h3{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        input{
+            font-size: 25px;
+            font-weight:bold;
+        }
+        h2{
+            font-size: 50px;
+            font-weight: bolder;
+            font-family: serif;
+        }
+        body{
+            margin: 0;
+            background-color: black;
+            color: white;
+            /* width: fit-content; */
+        }
+        .subm{
+            position: absolute;
+            left: 45%;
+            display: inline-block;
+            padding: 15px 30px;
+            color: rgb(149, 238, 149);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bolder;
+            overflow: hidden;
+            transition: 0.2s;
+            }
+
+        .subm:hover{
+            color: white;
+            background: rgb(149, 238, 149);
+            box-shadow: 0 0 10px rgb(149, 238, 149),0 0 40px rgb(149, 238, 149), 0 0 80px rgb(149, 238, 149);
+            transition-delay: 1s;
+            border-radius: 2em;
+            }
+
+        .subm span {
+            position: absolute;
+            display: block;
+            }
+        .subm span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgb(149, 238, 149));
+            }
+
+        .subm:hover span:nth-child(1) {
+            left: 100%;
+            transition: 1s;
+            }
+
+        .subm span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, rgb(149, 238, 149));
+            }
+
+        .subm:hover span:nth-child(3) {
+            right: 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+            }
+
+        .subm span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, rgb(149, 238, 149));
+            }
+
+        .subm:hover span:nth-child(2) {
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.25s;
+            }
+
+        .subm span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, rgb(149, 238, 149));
+            }
+
+        .subm:hover span:nth-child(4) {
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: 0.75s;
+            }
+
+        .subb{
+            background-color: black;
+            color: rgb(149, 238, 149);
+            border: none;
+            font-size: 30px;
+            font-weight: bold;
+            }
+        .subb:hover{
+            color: black;
+            background-color: rgb(149, 238, 149);
+            }
+    </style> -->
+</body>
+</html>
